@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Selector</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="items.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  
+</head>
+<body>
+    <div id="titleScreen">
+    <h1>Clueless Clothing</h1>
+    <div class="card" id="choose" onclick="choose()">
+        <img src="./sourceImages/dress.jpg" alt="dress" style="width:300px">
+        <div class="container">
+          <h4><b>Choose my outfit</b></h4>
+        </div>
+    </div>
+
+    <div class="card" id="add">
+        <img src="./sourceImages/coathanger.jpg" alt="hanger" style="width:300px">
+        <div class="container">
+            <h4><b>Add new item</b></h4>
+        </div>
+    </div>
+    </div>
+<!-- After choosing fanciness, press submit button which runs get weather function-->
+    <div id="outfitChoice_display"  align="center">
+        <p>Fanciness</p>
+        <input id="fancy" class="slider" type="range" min="1" max="5" value="3" tabindex="0">
+        <br></br>
+        <div class="button_cont"><a class="example_a" onclick="getCurrentWeather()" target="_blank" rel="nofollow noopener">Choose an outfit</a></div>
+
+        <div id="dispImage" ></div>
+          
+        </div>
+    </div>
+    
+</body>
+</html>
